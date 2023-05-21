@@ -12,7 +12,8 @@ import pierro_cardin from '../../assets/brands/pierro-cardin.webp'
 import samsung from '../../assets/brands/samsung.webp'
 import vestel from '../../assets/brands/vestel.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeftLong, faArrowRight, faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const BrandSlider = () => {
 
@@ -94,8 +95,10 @@ const BrandSlider = () => {
                         brands.map((brand, index) => (
                             <SplideSlide key={index}>
                                 <div className='text-center'>
-                                    <img src={brand.brand_img} alt="" className='img-fluid rounded-circle border' style={{ width: "68px" }} />
-                                    <div className='text-capitalize'>{brand.title}</div>
+                                    <Link to='/' className='text-decoration-none text-dark'>
+                                        <img src={brand.brand_img} alt="" className='img-fluid rounded-circle border' style={{ width: "68px" }} />
+                                        <div className='text-capitalize'>{brand.title}</div>
+                                    </Link>
                                 </div>
                             </SplideSlide>
                         ))

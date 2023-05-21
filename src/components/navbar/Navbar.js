@@ -30,7 +30,7 @@ const Navbar = () => {
 
                         <ul className="navbar-nav ms-auto">
                             <li className="nav-item me-2">
-                                <NavLink className="nav-link" to="/">
+                                <NavLink className="nav-link" to="/login">
                                     <FontAwesomeIcon icon={faUserCircle} className='me-1' />
                                     Giriş etmek
                                 </NavLink>
